@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>112年台灣觀光景點遊客累積人數</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+	<meta http-equiv="refresh" content="0;url=https://tech.digitgeek.net" />
+</head>
+<body>
+
+<p><h1>112年台灣觀光景點遊客累積人數</h1></p>
+<p>參考資料: <a href="https://admin.taiwan.net.tw/businessinfo/FilePage?a=14093" target="_blank">https://admin.taiwan.net.tw/businessinfo/FilePage?a=14093</a></p>
+
+<p><strong>野柳海洋世界</strong></p>
+<p>人數: 241297人</p>
+<img src="https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1200,h_630/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/s9evwrmjjrgngutgaxzd/%E9%87%8E%E6%9F%B3%E6%B5%B7%E6%B4%8B%E4%B8%96%E7%95%8C%E9%96%80%E7%A5%A8.jpg" alt="野柳海洋世界">
+
+<p><strong>綠島</strong></p>
+<p>人數: 304804人</p>
+<img src="https://tour.taitung.gov.tw/image/35865/1024x768" alt="綠島">
+
+<p><strong>石梯坪</strong></p>
+<p>人數: 200137人</p>
+<img src="https://s3.amazonaws.com/haplaytour/pic_20171120134000_3876.jpg" alt="石梯坪">
+
+<p><strong>七股鹽山園區</strong></p>
+<p>人數: 690750人</p>
+<img src="https://www.swcoast-nsa.gov.tw/image/2475/1024x768" alt="七股鹽山園區">
+
+<p><strong>日月潭環潭區</strong></p>
+<p>人數: 3327655人</p>
+<img src="https://www.sunmoonlake.gov.tw/zh-tw/content/images/static/discovery/discovery-2-2-02.jpg" alt="日月潭環潭區 ">
+
+<h2>遊客累積人數統計圖表</h2>
+<div id="myPlot" style="width: 100%; height: 400px;"></div>
+
+<h2>相關影片</h2>
+<iframe src="https://www.youtube.com/embed/HMi_MN5QOKo" allowfullscreen></iframe>
+
+<script>
+    const xArray = ["野柳海洋世界", "綠島", "石梯坪", "七股鹽山園區", "日月潭環潭區"];
+const yArray = [241297, 304804, 200137, 690750, 3327655];
+
+const data = [{
+  x: xArray,
+  y: yArray,
+  type: "bar",
+  orientation:"v",
+  marker: {color:"rgba(0,0,255)"}
+}];
+
+const layout = {title:"112年台灣觀光景點遊客累積人數"};
+
+Plotly.newPlot("myPlot", data, layout);
+</script>
+
+</body>
+</html>
+
